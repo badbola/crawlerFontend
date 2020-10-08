@@ -21,6 +21,7 @@ class Search extends Component {
       query: e.target.value,
     });
   };
+
   onSubmit = (e) => {
     e.preventDefault();
     const { query } = this.state;
@@ -70,7 +71,7 @@ class Search extends Component {
               )}
             </div>
             {inProgress ? (
-              <div>Please Wait</div>
+              <div></div>
             ) : (
               <ItemList lists={this.props.search.list} />
             )}

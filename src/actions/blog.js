@@ -1,6 +1,6 @@
-import { FETCH_BLOG, START_BLOG, FAIL_BLOG } from './actionTypes';
+import { FETCH_BLOG } from './actionTypes';
 
-export function blog(link) {
+export function fetchblog(link) {
   return (dispatch) => {
     const url = link;
     fetch(url, {
@@ -10,30 +10,21 @@ export function blog(link) {
         Authorization: localStorage.getItem('token'),
       },
     })
-      .then((response) => response.json())
+      .then((response) => {
+        // console.log('resp', response.clone().json());
+        return response.json();
+      })
       .then((data) => {
-        if (data.success) {
-          console('fetch' + data);
-          dispatch(updateUser(data.blogs));
-        }
-        dispatch(failBlog(data.message));
+        console.log('fetch' + data);
+        console.log(data.content);
+        dispatch(updateBlog(data.content));
       });
   };
 }
-export function startBlog() {
-  return {
-    type: START_BLOG,
-  };
-}
-export function updateBlog(blogs) {
+
+export function updateBlog(resp) {
   return {
     type: FETCH_BLOG,
-    blogs,
-  };
-}
-export function failBlog(errorMessage) {
-  return {
-    type: FAIL_BLOG,
-    error: errorMessage,
+    resp,
   };
 }

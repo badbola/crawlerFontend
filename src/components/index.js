@@ -7,7 +7,9 @@ import Search from './Search';
 import ItemList from './ItemList';
 import Home from './Home';
 import Blog from './Blog';
+import BlogContent from './BlogContent';
 import App from './App';
+import TagData from './TagData';
 
 export {
   UserList,
@@ -19,5 +21,7 @@ export {
   ItemList,
   Home,
   Blog,
+  BlogContent,
   App,
+  TagData,
 };

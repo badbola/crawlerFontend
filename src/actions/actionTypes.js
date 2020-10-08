@@ -18,6 +18,9 @@ export const SEARCH_START = 'SEARCH_START';
 export const SEARCH_SUCCESS = 'SEARCH_SUCCESS';
 export const SEARCH_FAIL = 'SEARCH_FAIL';
 export const SEARCH_AGAIN = 'SEARCH_AGAIN';
-export const START_BLOG = 'START_BLOG';
+
 export const FETCH_BLOG = 'FETCH_BLOG';
-export const FAIL_BLOG = 'FAIL_BLOG';
+
+//Tags
+
+export const FETCH_TAG = 'FETCH_TAG';

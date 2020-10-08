@@ -100,4 +100,47 @@ input {
   border-radius: 0.6rem;
   outline: none;
   border: none;
+  cursor: pointer;
+}
+
+/* LISTITEM */
+.list {
+  background-color: wheat;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.itemContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: 1px solid black;
+  margin: 1rem;
+}
+
+/* BLOG */
+.blogContainer {
+  display: flex;
+  align-items: center;
+}
+.blogButton {
+  margin: 0.5rem;
+  transition: ease-in-out 0.3s;
+}
+.blogButton:hover {
+  background-color: coral;
+  transition: ease-in-out 0.3s;
+}
+.blogTitle {
+  font-size: 1.5rem;
+}
+.blogContent {
+  background-color: cornsilk;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.author {
+  font-size: 1.2rem;
 }

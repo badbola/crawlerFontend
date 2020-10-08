@@ -1,33 +1,14 @@
-import { FAIL_BLOG, FETCH_BLOG, START_BLOG } from '../actions/actionTypes';
+import { FETCH_BLOG } from '../actions/actionTypes';
 
-const initialFetchState = {
-  blogs: {},
-  error: null,
-  isLoggedin: true,
+const initalBlogState = {
+  resp: {},
   isFetched: false,
-  isStarted: false,
 };
 
-export default function blog(state = initialFetchState, action) {
+export default function blog(state = initalBlogState, action) {
   switch (action.type) {
-    case START_BLOG:
-      return {
-        ...state,
-        isStarted: true,
-      };
     case FETCH_BLOG:
-      return {
-        ...state,
-        blogs: action.blogs,
-        isFetched: true,
-      };
-    case FAIL_BLOG:
-      return {
-        ...state,
-        isStarted: false,
-        isFetched: false,
-        error: action.error,
-      };
+      return { resp: action.resp, isFetched: true };
     default:
       return state;
   }

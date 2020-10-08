@@ -3,4 +3,5 @@ export const APIurls = {
   signup: () => 'http://localhost:8000/user/signup',
   fetchUsers: () => 'http://localhost:8000/user/all',
   search: (query) => `http://localhost:8000/q/${query}`,
+  fetchTag: (tag) => `http://localhost:8000/post/${tag}`,
 };

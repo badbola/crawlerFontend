@@ -29,7 +29,7 @@ class App extends React.Component {
     const { isLoggedin } = this.props.auth;
     return (
       <Router>
-        {isLoggedin ? <Navbar /> : <div>CRAWLER</div>}
+        {isLoggedin ? <Navbar /> : <div></div>}
 
         <Search />
         {/* <Route exact path="/" component={Home} /> */}
