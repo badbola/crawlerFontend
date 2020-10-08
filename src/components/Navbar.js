@@ -8,6 +8,9 @@ class Navbar extends Component {
     localStorage.removeItem('token');
     this.props.dispatch(logoutUser());
   };
+  handleHistory = (e) => {
+    window.open('/history', '_blank');
+  };
   render() {
     return (
       <div className="navBar">
@@ -21,6 +24,7 @@ class Navbar extends Component {
           <li>
             <Link to="/signup">SignUp</Link>
           </li>
+          <li onClick={this.handleHistory}>History</li>
           <li onClick={this.logout}>Logout</li>
         </ul>
       </div>

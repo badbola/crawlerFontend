@@ -29,14 +29,20 @@ code {
   text-decoration: none;
   padding: 1rem;
   transition: ease-in-out 0.3s;
+  color: cornsilk;
 }
 .navBar ul li a {
   text-decoration: none;
   margin: 0%;
+  color: cornsilk;
 }
 .navBar ul li:hover {
+  color: blueviolet;
   background-color: white;
   transition: ease-in-out 0.3s;
+}
+.navBar ul li a:hover {
+  color: blueviolet;
 }
 
 /* HOME */

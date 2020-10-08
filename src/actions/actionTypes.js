@@ -24,3 +24,7 @@ export const FETCH_BLOG = 'FETCH_BLOG';
 //Tags
 
 export const FETCH_TAG = 'FETCH_TAG';
+
+//History
+
+export const FETCH_HISTORY = 'FETCH_HISTORY';

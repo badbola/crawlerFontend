@@ -4,6 +4,7 @@ import auth from './auth';
 import search from './search';
 import blog from './blog';
 import tag from './tag';
+import history from './history';
 
 export default combineReducers({
   users,
@@ -11,4 +12,5 @@ export default combineReducers({
   blog,
   search,
   tag,
+  history,
 });

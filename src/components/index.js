@@ -10,6 +10,7 @@ import Blog from './Blog';
 import BlogContent from './BlogContent';
 import App from './App';
 import TagData from './TagData';
+import History from './History';
 
 export {
   UserList,
@@ -24,4 +25,5 @@ export {
   BlogContent,
   App,
   TagData,
+  History,
 };
