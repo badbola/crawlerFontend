@@ -11,3 +11,93 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.navBar {
+  display: flex;
+  justify-content: center;
+}
+.navBar ul {
+  background-color: blueviolet;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0%;
+  border-radius: 0 0 1rem 1rem;
+}
+.navBar ul li {
+  display: flex;
+  justify-content: stretch;
+  text-decoration: none;
+  padding: 1rem;
+  transition: ease-in-out 0.3s;
+}
+.navBar ul li a {
+  text-decoration: none;
+  margin: 0%;
+}
+.navBar ul li:hover {
+  background-color: white;
+  transition: ease-in-out 0.3s;
+}
+
+/* HOME */
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.details {
+  display: flex;
+  justify-content: center;
+}
+#Banner {
+  font-size: 4rem;
+  font-weight: 600;
+}
+#info {
+  font-size: 1.5rem;
+}
+#step {
+  font-size: 2rem;
+}
+.buttonsMain {
+  display: flex;
+  justify-content: center;
+}
+.buttonToggle {
+  padding: 5px;
+}
+.buttonToggle a {
+  text-decoration: none;
+}
+
+/* FORM */
+.forms {
+  display: flex;
+  justify-content: center;
+}
+.formAlign {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  display: flex;
+  outline: none;
+  border: none;
+  background-color: tomato;
+  padding: 1rem;
+  flex-grow: 1;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.subButton {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  outline: none;
+  border: none;
+}
